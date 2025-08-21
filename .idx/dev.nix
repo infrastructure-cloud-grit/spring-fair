@@ -11,7 +11,7 @@
         command = [ "${pkgs.python3}/bin/python" "-m" "http.server" "$PORT" ];
         manager = "web";
         # Optionally, specify a directory that contains your web app
-        # cwd = "app/client";
+        cwd = "src";
     };
   };
 }
