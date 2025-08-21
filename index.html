@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Fair</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/MHmHHWXK/favicon-1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+
+            <a href="#" class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/809/809117.png" alt="Ridex logo" width="40px" height="40px">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link" data-nav-link>Trang chủ</a></li>
+                    <li><a href="#menu" class="navbar-link" data-nav-link>Menu</a></li>
+                    <li><a href="#footer" class="navbar-link" data-nav-link>Về chúng tôi</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="header-contact">
+                    <a href="tel:88002345678" class="contact-link">Lớp 10A3</a>
+                    <span class="contact-time">09/02/2026 09:00 - 15:00</span>
+                </div>
+
+                <a href="#menu" class="btn" aria-labelledby="aria-label-text">
+                    <ion-icon name="car-outline"></ion-icon>
+                    <span id="aria-label-text">Xem Menu</span>
+                </a>
+
+                <!-- <a href="#" class="btn user-btn" aria-label="Profile"><ion-icon name="person-outline"></ion-icon></a> -->
+
+                <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="section hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2 class="h1 hero-title">TẾT SUM VẦY</h2>
+                        <p class="hero-text">TẠI TRƯỜNG THPT PHƯỚC LONG</p>
+                    </div>
+
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">00:00</h3>
+                                    <p class="timeline-description">Hoạt động 1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">00:00</h3>
+                                    <p class="timeline-description">Hoạt động 2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">00:00</h3>
+                                    <p class="timeline-description">Hoạt động 3</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">00:00</h3>
+                                    <p class="timeline-description">Hoạt động 4</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">00:00</h3>
+                                    <p class="timeline-description">Hoạt động 5</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-banner"></div>
+                </div>
+            </section>
+
+            <section class="section featured-car" id="menu">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <h2 class="h2 section-title">Menu</h2>
+                        <!-- <a href="#" class="featured-car-link">
+                            <span>View More</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a> -->
+                    </div>
+
+                    <ul class="featured-car-list">
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://cdn.xanhsm.com/2025/01/ce666750-banh-chung-thumb.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Bánh chưng</a></h3>
+                                    </div>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>2.000₫</strong> / miếng</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://daylambanh.edu.vn/wp-content/uploads/2019/01/banh-tet-la-cam-thom-ngon-600x400.jpg" alt="BMW 3 Series" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Bánh</a></h3>
+                                    </div>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>2.000₫</strong> / miếng</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://namart.com.vn/wp-content/uploads/2022/03/fdhbsx1x6tmyswssvb1v.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Trà đào</a></h3>
+                                    </div>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>2.000₫</strong> / ly</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://scruffandsteph.com/wp-content/uploads/2020/11/Banh-Flan-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Bánh</a></h3>
+                                    </div>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>2.000₫</strong> / phần</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://doiduavang.vn/wp-content/uploads/2021/02/khoai-tay-chien.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Bánh</a></h3>
+                                    </div>
+
+                                
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>2.000₫</strong> / phần</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="https://www.bartender.edu.vn/wp-content/uploads/2020/04/soda-chanh.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title"><a href="#">Soda chanh</a></h3>
+                            
+                                    </div>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price"><strong>6.000₫</strong> / ly</p>
+
+                                        <div class="quantity-selector">
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(-1, this)">-</button>
+                                            <input type="number" value="0" min="0" readonly>
+                                            <button class="quantity-selector-btn" onclick="changeQuantity(1, this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="cart-summary">
+                    <p><strong>Tạm tính:</strong> <span id="cart-total">0₫</span></p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+
+                    <div style="display: flex; align-items: center; margin-bottom: 30px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/809/809117.png" alt="Ridex logo" 
+                            width="40px" height="40px" style="margin-right: 12px;">
+                        <h2 class="footer-title" style="display: inline-block; margin: 0;">HỘI XUÂN LỚP 10A3</h2>
+                    </div>
+
+                    <p class="footer-text">Hãy đến lớp 10A3 để thưởng thức các món ăn và đồ uống trong ngày hội xuân nhé. 
+                        Tụi mình đã chuẩn bị một thực đơn đa dạng với nhiều món hấp dẫn cho các bạn đó.</p>
+                </div>
+
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Gian hàng 10A3</p></li>
+                    <li><a href="#" class="footer-link">Trang chủ</a></li>
+                    <li><a href="#" class="footer-link">Chương trình</a></li>
+                    <li><a href="#menu" class="footer-link">Menu</a></li>
+                    <li><a href="#footer" class="footer-link">Về chúng tôi</a></li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Thành viên</p></li>
+
+                    <li class="footer-link">Thành viên 1</li>
+                    <li class="footer-link">Thành viên 2</li>
+                    <li class="footer-link">Thành viên 3</li>
+                    <li class="footer-link">Thành viên 4</li>
+                    <li class="footer-link">Thành viên 5</li>
+                    <li class="footer-link">Thành viên 6</li>
+                    <li class="footer-link">Thành viên 7</li>
+                    <li class="footer-link">Thành viên 8</li>
+                </ul>
+            </div>
+
+            <!-- <div class="footer-bottom">
+                <ul class="social-list">
+                    <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#" class="social-link"><ion-icon name="logo-skype"></ion-icon></a></li>
+                    <li><a href="#" class="social-link"><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+
+                <p class="copyright">&copy;2025 <a href="https://codepen.io/leonam-silva-de-souza" target="_blank">ULTRA CODE</a>. All rights reserved.</p>
+            </div> -->
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
